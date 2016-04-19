@@ -15,6 +15,7 @@
 		36E24C3E1C882B8100DF59C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E24C3C1C882B8100DF59C9 /* LaunchScreen.storyboard */; };
 		36E24C491C882B8100DF59C9 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E24C481C882B8100DF59C9 /* ___Tests.m */; };
 		36E24C541C882B8100DF59C9 /* ___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E24C531C882B8100DF59C9 /* ___UITests.m */; };
+		36E24C631C882B9000DF59C9 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E24C621C882B9000DF59C9 /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		36E24C4F1C882B8100DF59C9 /* 钥匙串UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "钥匙串UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E24C531C882B8100DF59C9 /* ___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___UITests.m"; sourceTree = "<group>"; };
 		36E24C551C882B8100DF59C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36E24C611C882B9000DF59C9 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		36E24C621C882B9000DF59C9 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36C6EA2B1CC47BCE006155A1 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
 		36E24C221C882B8100DF59C9 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,9 @@
 		36E24C2D1C882B8100DF59C9 /* 钥匙串 */ = {
 			isa = PBXGroup;
 			children = (
+				36C6EA2B1CC47BCE006155A1 /* Lib */,
+				36E24C611C882B9000DF59C9 /* SFHFKeychainUtils.h */,
+				36E24C621C882B9000DF59C9 /* SFHFKeychainUtils.m */,
 				36E24C311C882B8100DF59C9 /* AppDelegate.h */,
 				36E24C321C882B8100DF59C9 /* AppDelegate.m */,
 				36E24C341C882B8100DF59C9 /* ViewController.h */,
@@ -272,6 +285,7 @@
 			files = (
 				36E24C361C882B8100DF59C9 /* ViewController.m in Sources */,
 				36E24C331C882B8100DF59C9 /* AppDelegate.m in Sources */,
+				36E24C631C882B9000DF59C9 /* SFHFKeychainUtils.m in Sources */,
 				36E24C301C882B8100DF59C9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +510,7 @@
 				36E24C5A1C882B8100DF59C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36E24C5B1C882B8100DF59C9 /* Build configuration list for PBXNativeTarget "钥匙串Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +519,7 @@
 				36E24C5D1C882B8100DF59C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36E24C5E1C882B8100DF59C9 /* Build configuration list for PBXNativeTarget "钥匙串UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +528,7 @@
 				36E24C601C882B8100DF59C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
